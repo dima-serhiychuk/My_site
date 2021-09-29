@@ -1,0 +1,62 @@
+h1 {
+    font-size: 72;
+    text-align: center;
+    color:darkred;
+    text-transform: uppercase;
+}
+
+.highlighted {
+    color: darkred;
+    text-align: center;
+    font-size: 36;
+}
+
+.special-text{
+    color: darkred;
+    font-style: italic;
+    width: fit-content;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+
+    padding: 10px;
+    background-color: darkgray;
+    border-style: dashed;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.border-of-photo {
+    border-radius: 8px;
+    width: auto;
+    height: 50%;
+    
+}
+
+.centered {
+    text-align: center;
+    font-size: 24;
+}
+
+a {
+    text-decoration: solid;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color:rgb(255, 255, 255);
+    background-color: darkred;
+    padding: 10px;
+    border-style:solid;
+    border-width: 0.5px;
+    border-radius: 5px;
+    border-color: black;
+}
+
+a:hover{
+    background-color: red;
+    border-radius: 22px;
+    transition: 0.7s;
+}
+
+html {
+    background-color: grey;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
