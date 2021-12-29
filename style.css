@@ -32,12 +32,14 @@
         margin-left: 30px;
         margin-right: 30px;
         width: auto;
-        height: 2000px;
-        background-color: white;
     }
     
     .header_top{
         display: none;
+    }
+
+    .header_main_text {
+        font-size: 35px;
     }
 }
 
