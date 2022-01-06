@@ -77,16 +77,16 @@ html, body {
     }
 
     .header_main p {
-        font-size: 10px;
+        font-size: 12px;
     }
 
     .news {
-        padding: 15px 10px 10px;
+        padding: 15px 25px 25px;
     }
 
     .news_title {
         font-size: 10px;
-        padding: 4px;
+        padding: 5px;
         border-radius: 4px;
     }
 
@@ -96,5 +96,6 @@ html, body {
 
     .news_container1, .news_container2, .news_container3, .news_container4 {
         font-size: 9px;
+        margin: 0px;
     }
 }
