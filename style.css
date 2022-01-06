@@ -71,7 +71,7 @@ html, body {
 }
 
 .news_container1, .news_container2, .news_container3, .news_container4 {
-    width: 450px;
+    max-width: 450px;
     height: 500px;
     margin: 15px;
     font-size: 14px;
