@@ -1,6 +1,6 @@
 .header_top {
     width: 100%;
-    height: 60px;
+    height: 55px;
     background-color: white;
 }
 
@@ -14,7 +14,7 @@
 .header_main p {
     margin: 0%;
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     font-family: Accia Moderato light;
     color: white;
 }
@@ -22,17 +22,16 @@
 .main {
     max-width: 100%;
     height: 2000px;
-    background-color: e1e1e1;
     display: flex;
     justify-content: center;
 }
 
 .news {
-    padding: 0 30px 30px;
+    padding: 0 15px 15px;
     width: 1200px;
     height: 2000px;
     background-color: white;
-    margin: 0 30px 30px;
+    margin: 0 15px 15px;
 }
 
 @media (max-width: 1000px) {
@@ -42,12 +41,12 @@
     }
 
     .header_main p {
-        font-size: 24px;
+        font-size: 14px;
     }
 }
 
 
 body {
     margin: 0%;
-    background-color: e1e1e1;
+    background-color: f2f2f2;
 }
