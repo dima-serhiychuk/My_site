@@ -45,7 +45,7 @@ html, body {
 
 .news {
     padding: 30px 50px 50px;
-    width: 1200px;
+    max-width: 1200px;
     background-color: white;
     margin: 0 15px 15px;
 
