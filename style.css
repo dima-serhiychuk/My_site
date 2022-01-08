@@ -34,7 +34,7 @@ html, body {
 }
 
 .news {
-    padding: 30px 50px 50px;
+    padding: 50px;
     max-width: 1200px;
     background-color: white;
     margin: 0 15px 15px;
@@ -97,7 +97,7 @@ html, body {
     }
 
     .news {
-        padding: 15px 25px 25px;
+        padding: 25px;
     }
 
     .news_title {
@@ -108,6 +108,12 @@ html, body {
 
     .news_title a {
         font-size: 8px;
+        opacity: 100%;
+        transition: none;
+    }
+
+    .news_title a:hover {
+        display: none;
     }
 
     .news_containers {
