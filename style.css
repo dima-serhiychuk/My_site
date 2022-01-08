@@ -27,7 +27,7 @@ html, body {
 
 .main {
     max-width: 100%;
-    height: 2000px;
+    height: max-content;
     display: flex;
     justify-content: center;
 }
@@ -60,17 +60,25 @@ html, body {
 }
 
 .news_container1, .news_container2, .news_container3, .news_container4 {
-    max-width: 450px;
-    height: 500px;
+    flex: 1 450px;
+    flex-basis: 400px;
+    /* max-width: 700px; */
     margin: 15px;
     font-size: 14px;
-    box-shadow:    -20px 20px 0 -17px #fff,
+    /* box-shadow:    -20px 20px 0 -17px #fff,
                     20px -20px 0 -17px #fff,
                     20px 20px 0 -20px rgb(126, 42, 77),
-                    0 0 0 2px rgb(126, 42, 77);
+                    0 0 0 2px rgb(126, 42, 77); */
+} 
+
+.news_container1 hr, .news_container2 hr, .news_container3 hr, .news_container4 hr {
+    border: none;
+    background-color: rgb(126, 42, 77);
+    height: 2px;
 }
 
-@media (max-width: 800px) {
+
+@media (max-width: 850px) {
    
     .header_top{
         display: none;
@@ -96,6 +104,6 @@ html, body {
 
     .news_container1, .news_container2, .news_container3, .news_container4 {
         font-size: 9px;
-        margin: 0px;
+        margin: 5px 4px 0px 4px;
     }
 }
