@@ -4,27 +4,66 @@ html, body {
     overflow-x: hidden;
 }
 
-.header_top {
+.header-top {
     width: 100%;
-    height: 55px;
+    /* height: 55px; */
+    height: max-content;
+    padding: 6px;
     background-color: white;
 }
 
-.header_main {
+.personal-navigation .menu {
+    display: flex;
+    justify-content: center;
+    margin: 14px 0 14px 0;
+}
+
+.personal-navigation .menu li, .personal-navigation .menu li a{
+    text-transform: uppercase;
+    font-family: 'Sylfaen' serif;
+    font-size: 16px;
+    color: rgb(126, 42, 77);
+    list-style-type: none;
+    padding: 0 10px 0 10px;
+    font-weight: bold;
+    opacity: 80%;
+    transition: 0.8s;
+}
+
+.personal-navigation .menu li:hover, .personal-navigation .menu li a:hover{
+    text-decoration: underline;
+    opacity: 100%;
+}
+
+.header-main {
     width: 100%;
     height: max-content;
     background-color: rgb(126, 42, 77);
+}
+
+.main-title {
     padding: 5px;
 }
 
-.header_main p, a {
-    margin: 0%;
+.main-title p {
+    margin: 0;   
     text-align: center;
     font-size: 20px;
     font-family: 'fonts\mint-type-acciamoderato-light.otf', 'Sylfaen' serif;
-    color: white;
+    color: #fff;
+}
+
+.main-title a {
     text-decoration: none;
 }
+
+  /* ffffdfdfdfdfd */
+
+.responsive-menu div{
+    display: none;
+}
+
+  /* bdfdjfjdjfgdgfdfg */
 
 .main {
     max-width: 100%;
@@ -41,7 +80,7 @@ html, body {
 
 }
 
-.news_title {
+.news-title {
     background-color: rgb(126, 42, 77);
     border-radius: 3px;
     width: max-content;
@@ -50,7 +89,7 @@ html, body {
     white-space: nowrap;
 }
 
-.news_title a {
+.news-title a {
     color: white;
     text-decoration: none;
     opacity: 70%;
@@ -59,26 +98,26 @@ html, body {
     font-family: 'Sylfaen' serif;
 }
 
-.news_title a:hover {
+.news-title a:hover {
     opacity: 100%;
     text-decoration: underline;
 }
 
-.news_containers {
+.news-containers {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 50px 0 0 0;
 }
 
-.news_container1, .news_container2, .news_container3, .news_container4 {
+.news-container1, .news-container2, .news-container3, .news-container4 {
     flex: 1;
     flex-basis: 400px;
     margin: 0 15px 35px 15px;
     font-size: 14px;
 } 
 
-.news_container1 hr, .news_container2 hr, .news_container3 hr, .news_container4 hr {
+.news-container1 hr, .news-container2 hr, .news-container3 hr, .news-container4 hr {
     border: none;
     background-color: rgb(126, 42, 77);
     height: 2px;
@@ -86,13 +125,13 @@ html, body {
 }
 
 
-@media (max-width: 850px) {
+@media screen and (max-width: 850px) {
    
-    .header_top{
+    .header-top{
         display: none;
     }
 
-    .header_main p {
+    .header-main p {
         font-size: 12px;
     }
 
@@ -100,33 +139,88 @@ html, body {
         padding: 25px;
     }
 
-    .news_title {
+    .news-title {
         font-size: 8px;
         padding: 2px 5px 2px 5px;
         border-radius: 1.5px;
     }
 
-    .news_title a {
+    .news-title a {
         font-size: 8px;
         opacity: 100%;
         transition: none;
     }
 
-    .news_title a:hover {
-        pointer-events: none;
+    .news-title a:hover {
+        pointer-events: 0;
+        text-decoration: none;
     }
 
-    .news_containers {
+    .news-containers {
         margin: 25px 0 0 0;
     }
 
-    .news_container1, .news_container2, .news_container3, .news_container4 {
+    .news-container1, .news-container2, .news-container3, .news-container4 {
         font-size: 9px;
         margin: 0 4px 20px 4px;
         flex-basis: 250px;
     }
 
-    .news_container1 hr, .news_container2 hr, .news_container3 hr, .news_container4 hr {
+    .news-container1 hr, .news-container2 hr, .news-container3 hr, .news-container4 hr {
         margin: 0 0 7px 0;
+    }
+
+    /* dsdsdsdsdsdsdsdsdsdsdssdsdsdsddsdsds */
+
+    .responsive-menu div {
+        display: block;
+        
+    }
+    
+    .show-menu-btn, .hide-menu-btn {
+        cursor: pointer;
+        position: absolute;
+    }
+
+    .show-menu-btn img, .hide-menu-btn img {
+        margin: 10px 0 0 10px;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        position: fixed;
+        width: 100%;
+        background-color: #333;
+        height: 100%;
+        left: -100%;
+        transition: 0.8s;
+    }
+    
+    .menu a {
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        white-space: nowrap;
+        padding: 25px;
+        color: white;
+        font-size: 18px;
+        opacity: 80%;
+    }
+
+    .menu a:hover {
+        opacity: 100%;
+    }
+    
+    #chk {
+        position: absolute;
+        visibility: hidden;
+        z-index: -1111;
+    }
+
+    #chk:checked ~ .menu{
+        left:0;
     }
 }
