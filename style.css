@@ -131,6 +131,12 @@ html, body {
     margin: 0 0 20px 0;
 }
 
+.news-container1 a, .news-container2 a, .news-container3 a, .news-container4 a {
+    color: rgb(126, 42, 77);
+    text-decoration: none;
+    font-size: 20px;
+}
+
 
 @media screen and (max-width: 850px) {
    
@@ -175,6 +181,10 @@ html, body {
 
     .news-container1 hr, .news-container2 hr, .news-container3 hr, .news-container4 hr {
         margin: 0 0 7px 0;
+    }
+
+    .news-container1 a, .news-container2 a, .news-container3 a, .news-container4 a {
+        font-size: 12px;
     }
 
     /* dsdsdsdsdsdsdsdsdsdsdssdsdsdsddsdsds */
