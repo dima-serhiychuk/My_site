@@ -277,6 +277,7 @@ footer {
     opacity: 100%;
 }
 
+
 /* media */
 
 @media screen and (max-width: 850px) {
@@ -452,43 +453,8 @@ footer {
 
     .main-information-containers {
         flex-direction: column;
-        display: none;
+        
     }
 
-    #kchk {
-        position: absolute;
-        visibility: hidden;
-        z-index: -1111;
-    }
-
-    #kchk:checked ~ .main-information-containers {
-        display: flex;
-    }
-
-    .footer-menu-box, .lyceum-departments-box,
-    .education-system-box, .methodological-associations-box,
-    .other-info-box {
-        display: none;
-    }
-
-    .footer-menu-title:hover ~ .footer-menu-box { 
-        display: flex;
-    }
-
-    .lyceum-departments-title:hover ~ .lyceum-departments-box { 
-        display: flex;
-    }
-
-    .education-system-title:hover ~ .education-system-box { 
-        display: flex;
-    }
-
-    .methodological-associations-title:hover ~ .methodological-associations-box { 
-        display: flex;
-    }
-
-    .other-info-title:hover ~ .other-info-box { 
-        display: flex;
-    }
-}
+}   
     
