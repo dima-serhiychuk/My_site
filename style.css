@@ -4,6 +4,8 @@ html, body {
     overflow-x: hidden;
 }
 
+/* header */
+
 .header-top {
     width: 100%;
     height: max-content;
@@ -33,7 +35,7 @@ html, body {
 
 .personal-navigation .menu-top li:hover,
  .personal-navigation .menu-top li a:hover{
-    text-decoration: underline;
+    /* text-decoration: underline; */
     opacity: 100%;
 }
 
@@ -65,13 +67,17 @@ html, body {
     height: max-content;
 }
 
-  /* ffffdfdfdfdfd */
+/* /header */
+
+/* responsive-menu */
 
 .responsive-menu {
     display: none;
 }
 
-  /* bdfdjfjdjfgdgfdfg */
+/* /responsive-menu */
+
+/* main-page */
 
 .main {
     max-width: 100%;
@@ -80,12 +86,22 @@ html, body {
     justify-content: center;
 }
 
-.news {
-    padding: 50px;
+.page {
     max-width: 1200px;
-    background-color: white;
+    background-color: #fff;
     margin: 0 15px 0 15px;
+    display: flex;
+    justify-content: center;
+}
 
+/* /main-page */
+
+/* news-block */
+
+.news-box {
+    padding: 50px;
+    max-height: max-content;
+    max-width: max-content;
 }
 
 .news-title {
@@ -111,7 +127,7 @@ html, body {
     text-decoration: underline;
 }
 
-.news-block {
+.news-blocks {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -138,53 +154,130 @@ html, body {
     font-size: 20px;
 }
 
+/* /news-block */
+
+/* footer */
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
 .footer-top {
     display: flex;
-    flex-direction: column;
-    height: max-content;
+    justify-content: center;
+    background-color: #333;
     width: 100%;
+    height: max-content;   
+}
+
+.footer-top-main {
+    width: max-content;
+    background-color: #333;
+    height: max-content;
+    padding: 50px;
+}
+
+/* fdfdfdfdf */
+
+.footer-site-navigation-top {
+    max-width: 1100px;
+    padding: 0 0 25px 0;
+    height: max-content;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-information-title {
+    margin: 0 15px 0 15px;
+}
+
+.main-information-title h3 {
+    font-weight: bold;
+    color: #fff;
+}
+
+.main-information-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-information-containers {
+    display: flex;
+}
+
+.main-information-containers div {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 250px;
+    margin: 0 15px 0 15px;
+}
+
+.main-information-containers div a {
+    margin: 5px 0 5px 0;
+    color: #fff;
+    text-decoration: none;
+    opacity: 70%;
+    transition: 0.8s;
+    max-width: max-content;
+}
+
+.main-information-containers div a:hover {
+    opacity: 100%;
+}
+
+/* dfdfdfdfdf */
+
+.footer-site-navigation-bottom {
+    max-width: 1100px;
+    padding: 0 0 25px 0;
+    height: max-content;
     background-color: #333;
 }
 
-.footer-personal-navigation .menu-bottom {
+.footer-site-navigation-bottom-containers {
+    display: flex;
+}
+
+.footer-menu, .lyceum-departments,
+.education-system, .methodological-associations,
+.other-info
+ {
+    flex-basis: 250px;
+    margin: 0 15px 0 15px;
     display: flex;
     flex-direction: column;
-    margin: 30px 0 30px 0;
-    padding: 0 200px 0;
-    list-style-type: none;
-    width: max-content;
 }
 
-.footer-personal-navigation .menu-bottom p {
+.footer-site-navigation-bottom-containers div h3 {
     font-weight: bold;
-    text-transform: uppercase;
-    font-family: 'Sylfaen' serif;
-    font-size: 14px;
-    color: #fff;  
-    padding: 8px 0 8px 0; 
-    width: max-content;
-    height: max-content;
-}
-
-.footer-personal-navigation .menu-bottom li,
- .footer-personal-navigation .menu-bottom li a{
-    text-transform: uppercase;
-    font-family: 'Sylfaen' serif;
-    font-size: 12px;
     color: #fff;
-    padding: 6px 0 6px 0;
-    text-decoration: none;
-    width: max-content;
-    height: max-content;
-    opacity: 80%;
-    transition: 0.8s;
 }
 
-.footer-personal-navigation .menu-bottom li:hover,
- .footer-personal-navigation .menu-bottom li a:hover {
-     opacity: 100%;
-     text-decoration: underline;
- }
+.footer-menu-box, .lyceum-departments-box,
+.education-system-box, .methodological-associations-box,
+.other-info-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-menu a, .lyceum-departments a,
+.education-system a, .methodological-associations a,
+.other-info a {
+    margin: 5px 0 5px 0;
+    text-decoration: none;
+    opacity: 70%;
+    color: #fff;
+    transition: 0.8s;
+    max-width: max-content;
+}
+
+.footer-site-navigation-bottom-containers div a:hover {
+    opacity: 100%;
+}
+
+/* media */
 
 @media screen and (max-width: 850px) {
    
@@ -196,7 +289,7 @@ html, body {
         font-size: 12px;
     }
 
-    .news {
+    .news-box {
         padding: 25px;
     }
 
@@ -217,7 +310,7 @@ html, body {
         text-decoration: none;
     }
 
-    .news-block {
+    .news-blocks {
         margin: 25px 0 0 0;
     }
 
@@ -263,7 +356,7 @@ html, body {
         position: absolute;
         width: 100%;
         background-color: #333;
-        height: max-content;
+        height: 100%;
         left: -100%;
         transition: 0.8s;
     }
@@ -292,4 +385,110 @@ html, body {
     #chk:checked ~ .menu{
         left:0;
     }
+
+    /* dsdsdsdsdsdsdsdsdsdsdssdsdsdsddsdsds */
+
+    /* footer */
+
+    footer {
+        font-size: 12px;
+    }
+
+    .footer-top {
+        display: block;
+    }
+
+    .footer-top-main {
+        padding: 25px;
+        margin: 0 15px 0 15px;
+    }
+
+    .main-information-title {
+        margin: 0;
+        width: max-content;
+        height: max-content;
+    }
+
+    .main-information-title:hover ~ .main-information-containers {
+        display: flex;
+    }
+
+    .main-information-containers div {
+        flex-basis: 0;
+        margin: 10px 0;
+        max-width: 50%;
+    }
+
+    .footer-site-navigation-top {
+        padding: 0px;
+    }
+
+    .footer-site-navigation-bottom-containers div h3 {
+        margin: 0 0 10px 0;
+    }
+
+    .footer-site-navigation-bottom-containers {
+        flex-direction: column;
+    }
+
+    .footer-menu, .lyceum-departments,
+    .education-system, .methodological-associations,
+    .other-info {
+        flex-basis: 0;
+        margin: 10px 0;
+        max-width: 50%;
+    }
+
+    .footer-menu-title, .lyceum-departments-title,
+    .education-system-title, .methodological-associations-title,
+    .other-info-title {
+        height: max-content;
+        width: max-content;
+    }
+
+    .main-information-box {
+        height: max-content;
+    }
+
+    .main-information-containers {
+        flex-direction: column;
+        display: none;
+    }
+
+    #kchk {
+        position: absolute;
+        visibility: hidden;
+        z-index: -1111;
+    }
+
+    #kchk:checked ~ .main-information-containers {
+        display: flex;
+    }
+
+    .footer-menu-box, .lyceum-departments-box,
+    .education-system-box, .methodological-associations-box,
+    .other-info-box {
+        display: none;
+    }
+
+    .footer-menu-title:hover ~ .footer-menu-box { 
+        display: flex;
+    }
+
+    .lyceum-departments-title:hover ~ .lyceum-departments-box { 
+        display: flex;
+    }
+
+    .education-system-title:hover ~ .education-system-box { 
+        display: flex;
+    }
+
+    .methodological-associations-title:hover ~ .methodological-associations-box { 
+        display: flex;
+    }
+
+    .other-info-title:hover ~ .other-info-box { 
+        display: flex;
+    }
 }
+    
