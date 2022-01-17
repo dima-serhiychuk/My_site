@@ -347,6 +347,7 @@ footer {
 
     .show-menu-btn img, .hide-menu-btn img {
         margin: auto 0 auto 0;
+        pointer-events: none;
     }
 
     .responsive-menu-box {
@@ -359,24 +360,20 @@ footer {
         background-color: #333;
         height: max-content;
         left: -100%;
-        transition: 0.8s;
+        transition: 0.6s;
         padding: 0 0 100px 0;
     }
 
     .responsive-menu-box div {
         display: flex;
         flex-direction: column;
-        margin: 0px 0 0 60px;
-        height: max-content;
+        margin: 5px 0 5px 60px;
         max-width: 50%;
         flex-wrap: wrap;
         justify-content: flex-start;
         font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .responsive-menu-box div h3 {
-        font-weight: bold;
-        color: #fff;
+        height: 0px;
+        overflow: hidden;
     }
     
     .responsive-menu-box div a{
@@ -396,6 +393,60 @@ footer {
 
     #chk:checked ~ .responsive-menu-box{
         left:0;
+    }
+
+    .show-submenu-btn {
+        margin: 0 0 0 60px;
+        color: #fff;
+        display: flex;
+        width: max-content;
+        height: 55px;
+    }
+
+    .show-submenu-btn h3 {
+        margin: auto 0 auto 0;
+        font-size: 18px;
+    }
+
+    .show-submenu-btn img {
+        pointer-events: none;
+        margin: auto 0 auto 10px;
+    }
+
+    #sub-chk1, #sub-chk2, #sub-chk3, #sub-chk4, #sub-chk5, #sub-chk6{
+        position: absolute;
+        visibility: hidden;
+        z-index: -1111;
+    }
+
+    #sub-chk1:checked ~ .header-menu {
+        height: max-content;
+        overflow: auto;
+    }
+
+    #sub-chk2:checked ~ .main-information-header {
+        height: max-content;
+        overflow: auto;
+    }
+
+    #sub-chk3:checked ~ .lyceum-departments-header {
+        height: max-content;
+        overflow: auto;
+    }
+
+    #sub-chk4:checked ~ .education-system-header {
+        height: max-content;
+        overflow: auto;
+    }
+
+    #sub-chk5:checked ~ .methodological-associations-header {
+        height: max-content;
+        overflow: auto;
+    }
+
+    #sub-chk6:checked ~ .other-info-header {
+        height: max-content;
+        overflow: auto;
     }
 
     /* dsdsdsdsdsdsdsdsdsdsdssdsdsdsddsdsds */
