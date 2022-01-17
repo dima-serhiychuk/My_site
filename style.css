@@ -349,7 +349,7 @@ footer {
         margin: auto 0 auto 0;
     }
 
-    .menu {
+    .responsive-menu-box {
         display: flex;
         flex-direction: column;
         padding: 0;
@@ -357,24 +357,35 @@ footer {
         position: absolute;
         width: 100%;
         background-color: #333;
-        height: 100%;
+        height: max-content;
         left: -100%;
         transition: 0.8s;
-    }
-    
-    .menu a {
-        text-decoration: none;
-        text-transform: uppercase;
-        text-align: center;
-        white-space: nowrap;
-        padding: 25px;
-        color: white;
-        font-size: 18px;
-        opacity: 80%;
+        padding: 0 0 100px 0;
     }
 
-    .menu a:hover {
-        opacity: 100%;
+    .responsive-menu-box div {
+        display: flex;
+        flex-direction: column;
+        margin: 0px 0 0 60px;
+        height: max-content;
+        max-width: 50%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .responsive-menu-box div h3 {
+        font-weight: bold;
+        color: #fff;
+    }
+    
+    .responsive-menu-box div a{
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 5px;
+        color: white;
+        font-size: 12px;
+        opacity: 50%;
     }
     
     #chk {
@@ -383,77 +394,15 @@ footer {
         z-index: -1111;
     }
 
-    #chk:checked ~ .menu{
+    #chk:checked ~ .responsive-menu-box{
         left:0;
     }
 
     /* dsdsdsdsdsdsdsdsdsdsdssdsdsdsddsdsds */
 
-    /* footer */
-
-    footer {
-        font-size: 12px;
-    }
-
-    .footer-top {
-        display: block;
-    }
 
     .footer-top-main {
-        padding: 25px;
-        margin: 0 15px 0 15px;
-    }
-
-    .main-information-title {
-        margin: 0;
-        width: max-content;
-        height: max-content;
-    }
-
-    .main-information-title:hover ~ .main-information-containers {
-        display: flex;
-    }
-
-    .main-information-containers div {
-        flex-basis: 0;
-        margin: 10px 0;
-        max-width: 50%;
-    }
-
-    .footer-site-navigation-top {
-        padding: 0px;
-    }
-
-    .footer-site-navigation-bottom-containers div h3 {
-        margin: 0 0 10px 0;
-    }
-
-    .footer-site-navigation-bottom-containers {
-        flex-direction: column;
-    }
-
-    .footer-menu, .lyceum-departments,
-    .education-system, .methodological-associations,
-    .other-info {
-        flex-basis: 0;
-        margin: 10px 0;
-        max-width: 50%;
-    }
-
-    .footer-menu-title, .lyceum-departments-title,
-    .education-system-title, .methodological-associations-title,
-    .other-info-title {
-        height: max-content;
-        width: max-content;
-    }
-
-    .main-information-box {
-        height: max-content;
-    }
-
-    .main-information-containers {
-        flex-direction: column;
-        
+        display: none;
     }
 
 }   
