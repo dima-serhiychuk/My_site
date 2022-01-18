@@ -358,6 +358,7 @@ footer {
         position: absolute;
         width: 100%;
         background-color: #333;
+        min-height: 100%;
         height: max-content;
         left: -100%;
         transition: 0.6s;
