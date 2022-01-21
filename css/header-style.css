@@ -1,0 +1,200 @@
+.header-top {
+    width: 100%;
+    height: max-content;
+    padding: 6px;
+    background-color: white;
+}
+
+.personal-navigation .menu-top {
+    display: flex;
+    justify-content: center;
+    margin: 14px 0 14px 0;
+}
+
+.personal-navigation .menu-top li,
+ .personal-navigation .menu-top li a{
+    text-transform: uppercase;
+    font-family: 'Sylfaen' serif;
+    font-size: 16px;
+    color: rgb(126, 42, 77);
+    list-style-type: none;
+    padding: 0 10px 0 10px;
+    font-weight: bold;
+    opacity: 80%;
+    transition: 0.8s;
+    text-decoration: none;
+}
+
+.personal-navigation .menu-top li:hover,
+ .personal-navigation .menu-top li a:hover{
+    opacity: 100%;
+}
+
+.header-main {
+    width: 100%;
+    height: max-content;
+    background-color: rgb(126, 42, 77);
+}
+
+.responsive-menu {
+    display: none;
+}
+
+.main-title {
+    padding: 5px;
+    width: max-content;
+    height: max-content;
+    margin: 0 auto 0 auto;  
+}
+
+.main-title p {
+    margin: 0 auto 0 auto; 
+    text-align: center;
+    font-size: 20px;
+    font-family: 'fonts\mint-type-acciamoderato-light.otf', 'Sylfaen' serif;
+    color: #fff;
+    width: max-content;
+}
+
+.main-title a {
+    text-decoration: none;
+    width: max-content;
+    height: max-content;
+}
+
+@media screen and (max-width: 850px) {
+
+    .header-top{
+        display: none;
+    }
+
+    .header-main p {
+        font-size: 12px;
+    }
+
+    .responsive-menu {
+        display: block;
+        
+    }
+    
+    .show-menu-btn, .hide-menu-btn {
+        cursor: pointer;
+        position: absolute;
+        width: 55px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .show-menu-btn i, .hide-menu-btn i {
+        margin: auto 0 auto 0;
+        font-size: 35px;
+        color: #fff;
+    }
+
+    .responsive-menu-box {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        width: 100%;
+        background-color: #333;
+        min-height: 100%;
+        height: max-content;
+        left: -100%;
+        transition: 0.6s;
+        padding: 0 0 100px 0;
+    }
+
+    .responsive-menu-box div {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0 5px 60px;
+        max-width: 50%;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        font-family: Arial, Helvetica, sans-serif;
+        height: 0px;
+        overflow: hidden;
+    }
+    
+    .responsive-menu-box div a{
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 12px 7px 12px 7px;
+        color: white;
+        font-size: 12px;
+        opacity: 50%;
+        width: max-content;
+        height: max-content;
+    }
+    
+    #chk {
+        position: absolute;
+        visibility: hidden;
+        z-index: -1111;
+    }
+
+    #chk:checked ~ .responsive-menu-box{
+        left:0;
+    }
+
+    .show-submenu-btn {
+        margin: 0 0 0 60px;
+        color: #fff;
+        display: flex;
+        max-width: 70%;
+        height: 55px;
+    }
+
+    .show-submenu-btn h3 {
+        margin: auto 0 auto 0;
+        font-size: 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        width: max-content;
+        height: max-content;
+    }
+
+    .show-submenu-btn i {
+        margin: auto 0 auto 10px;
+        font-size: 22px;
+        color: #fff;
+    }
+
+    #sub-chk1, #sub-chk2, #sub-chk3, #sub-chk4, #sub-chk5, #sub-chk6{
+        position: absolute;
+        visibility: hidden;
+        z-index: -1111;
+    }
+
+    #sub-chk1:checked ~ .header-menu {
+        height: max-content;
+        overflow: auto;
+    }
+
+    #sub-chk2:checked ~ .main-information-header {
+        height: max-content;
+        overflow: auto;
+    }
+
+    #sub-chk3:checked ~ .lyceum-departments-header {
+        height: max-content;
+        overflow: auto;
+    }
+
+    #sub-chk4:checked ~ .education-system-header {
+        height: max-content;
+        overflow: auto;
+    }
+
+    #sub-chk5:checked ~ .methodological-associations-header {
+        height: max-content;
+        overflow: auto;
+    }
+
+    #sub-chk6:checked ~ .other-info-header {
+        height: max-content;
+        overflow: auto;
+    }
+}
