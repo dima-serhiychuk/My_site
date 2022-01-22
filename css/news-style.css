@@ -2,6 +2,7 @@
     padding: 50px;
     max-height: max-content;
     max-width: max-content;
+    font-family: 'Raleway', sans-serif;
 }
 
 .news-title {
@@ -19,7 +20,6 @@
     opacity: 70%;
     transition: 0.8s;
     font-size: 14px;
-    font-family: 'Sylfaen' serif;
 }
 
 .news-title a:hover {
