@@ -82,7 +82,7 @@
     }
 
     .news-container {
-        font-size: 9px;
+        font-size: 12px;
         margin: 0 4px 20px 4px;
         flex-basis: 250px;
     }
@@ -92,6 +92,6 @@
     }
 
     .news-container a {
-        font-size: 12px;
+        font-size: 14px;
     }
 }
